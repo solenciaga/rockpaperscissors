@@ -10,12 +10,14 @@ while True:
     print('%s Wins, %s Losses, %s Ties' % (wins, losses, ties))
     while True:
         print('Make your move! - Rock, Paper, Scissors, or Quit')
+        print('Score: ' + str(wins * 100))
         player_input = input('>')
         if player_input == 'q':
             sys.exit()
         if player_input == 'r' or player_input == 'p' or player_input == 's':
             break
         print('Type one of r, p, s, or q.')
+        
 
     if player_input == 'r':
         print('Rock vs..')
